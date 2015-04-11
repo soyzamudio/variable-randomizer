@@ -11,6 +11,10 @@ angular.module('Variables')
   o.controller = ['$rootScope', '$scope', function($rootScope, $scope) {
     console.log($scope.variable);
     $scope.word = $scope.variable;
+
+    $scope.fallback = function(copy) {
+      window.prompt('Press cmd+c to copy the text below.', copy);
+    };
   }];
 
   return o;

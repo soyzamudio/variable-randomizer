@@ -1,6 +1,6 @@
 angular.module('Variables', ['ui.router', 'ngLodash', 'ngClipboard'])
 .config(['ngClipProvider', function(ngClipProvider) {
-  ngClipProvider.setPath("../bower_components/zeroclipboard/dist/ZeroClipboard.swf");
+  ngClipProvider.setPath('bower_components/zeropclipboard/dist/ZeroClipboard.swf');
 }])
 .controller('HomeController', ['$scope', 'lodash', function($scope, lodash) {
   var words = ['hello', 'this', 'is', 'a', 'test', 'with', 'random', 'words', 'lol'];
