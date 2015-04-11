@@ -1,0 +1,38 @@
+body {
+  background: #f1f1f1;
+  padding: 10%;
+}
+
+#variable {
+  margin-top: 5%;
+}
+
+#title {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 3%;
+}
+
+select.form-control { border-radius: 0; -webkit-appearance: none; }
+
+.code {
+  font-family: 'Source Code Pro';
+  color: #fff;
+  margin: 25px 0 25px 10px;
+  padding: 7px 20px;
+  border-radius: 5px 0 0 5px;
+  background: black;
+  font-size: 1.2em;
+  height: 40px;
+}
+
+.var {
+  color: #F3256F;
+}
+
+.copy {
+  height: 40px;
+}
+
+#git {
+  margin-top: 30px;
+}
