@@ -19,10 +19,9 @@ select.form-control { border-radius: 0; -webkit-appearance: none; }
   color: #fff;
   margin: 25px 0 25px 10px;
   padding: 7px 20px;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px;
   background: #282828;
   font-size: 1.2em;
-  height: 40px;
 }
 
 .var {
