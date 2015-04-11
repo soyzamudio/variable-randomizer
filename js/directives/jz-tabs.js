@@ -11,7 +11,9 @@ angular.module('Variables')
   };
   o.link = function(scope, element, attrs) {};
   o.controller = ['$rootScope', '$scope', function($rootScope, $scope) {
-
+    $scope.camelCase = $scope.camel;
+    $scope.kebabCase = $scope.kebab;
+    $scope.snakeCase = $scope.snake;
   }];
 
   return o;
