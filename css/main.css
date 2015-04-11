@@ -4,7 +4,7 @@ body {
 }
 
 #variable {
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 #title {
@@ -20,7 +20,7 @@ select.form-control { border-radius: 0; -webkit-appearance: none; }
   margin: 25px 0 25px 10px;
   padding: 7px 20px;
   border-radius: 5px 0 0 5px;
-  background: black;
+  background: #282828;
   font-size: 1.2em;
   height: 40px;
 }

@@ -37,31 +37,7 @@
   </div>
 
   <div id='variable' class="col-md-offset-2 col-md-8" ng-if='camel'>
-    <div class="col-md-12">
-      <div role="tabpanel">
-
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#camel" aria-controls="camel" role="tab" data-toggle="tab">camelCase</a></li>
-          <li role="presentation"><a href="#kebab" aria-controls="kebab" role="tab" data-toggle="tab">kebab-case</a></li>
-          <li role="presentation"><a href="#snake" aria-controls="snake" role="tab" data-toggle="tab">snake-case</a></li>
-        </ul>
-
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="camel">
-            <div jz-code variable="camel"></div>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="kebab">
-            <div jz-code variable="kebab"></div>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="snake">
-            <div jz-code variable="snake"></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
+    <div jz-tabs camel='camel' snake='snake' kebab='kebab'></div>
   </div>
 
   <div id="git" class="col-md-12 text-center">
@@ -76,6 +52,7 @@
   <script src="bower_components/ng-clip/dest/ng-clip.min.js"></script>
   <script src="bower_components/zeroclipboard/dist/ZeroClipboard.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/directives/jz-tabs.js"></script>
   <script src="js/service.js"></script>
   <script src="js/directives/jz-code.js"></script>
   <script id="github-bjs" src="https://buttons.github.io/buttons.js" async defer></script>
