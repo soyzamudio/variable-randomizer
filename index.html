@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='Variables'>
+<head>
+  <meta charset="UTF-8">
+  <title>Random Variable Names</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="bower_components/angular/angular.min.js"></script>
+</head>
+<body ng-cloak ng-controller='HomeController'>
+
+  <div id='title' class="col-md-offset-2 col-md-8 text-center">
+    <h1>Random Variable Name Generator</h1>
+  </div>
+
+  <div class="col-md-offset-3 col-md-6">
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+      <div class="input-group">
+        <div class="input-group-addon">var</div>
+        <select ng-model='number' class='form-control'>
+          <option value="">Number of words</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button" ng-click='generateRandom()'>Generate</button>
+          <button class="btn btn-default" type="button" ng-click='clear()'>Clear</button>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div id='variable' class="col-md-offset-2 col-md-8" ng-if='camel'>
+    <div jz-tabs camel='camel' snake='snake' kebab='kebab'></div>
+  </div>
+
+  <div id="git" class="col-md-12 text-center">
+    <div id="follow"><a href="https://github.com/soyzamudio/variable-randomizer" data-style="mega" class="github-button">&nbsp; View on GitHub</a></div>
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="bower_components/lodash/lodash.min.js"></script>
+  <script src="bower_components/ng-lodash/build/ng-lodash.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/ng-clip/dest/ng-clip.min.js"></script>
+  <script src="bower_components/zeroclipboard/dist/ZeroClipboard.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/service.js"></script>
+  <script src="js/directives/jz-tabs.js"></script>
+  <script src="js/directives/jz-code.js"></script>
+  <script id="github-bjs" src="https://buttons.github.io/buttons.js" async defer></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "random-variable",
+  "version": "0.0.0",
+  "authors": [
+    "Jose Zamudio <zamudio@outlook.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "~3.6.0",
+    "bootstrap": "~3.3.4",
+    "ionicons": "~2.0.1",
+    "angular": "~1.3.15",
+    "angular-ui-router": "~0.2.13",
+    "ng-lodash": "~0.2.0",
+    "zeroclipboard": "~2.2.0",
+    "ng-clip": "~0.2.6"
+  }
+}
