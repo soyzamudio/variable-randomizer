@@ -7,9 +7,7 @@ angular.module('Variables', ['ui.router', 'ngLodash', 'ngClipboard'])
     var temp = '';
     Words.getWords($scope.number)
     .then(function(response) {
-      console.log(response);
       response.data.forEach(function(e) {
-        console.log(e);
         temp += ' ' + e.word;
       });
 
