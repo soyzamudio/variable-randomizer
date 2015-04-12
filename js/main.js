@@ -17,6 +17,7 @@ angular.module('Variables', ['ui.router', 'ngLodash', 'ngClipboard'])
       $scope.kebab = lodash.kebabCase(temp);
       $scope.snake = lodash.snakeCase(temp);
     });
+    $scope.clear();
   };
 
   $scope.clear = function() {
