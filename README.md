@@ -10,4 +10,4 @@ We use [Wordnik's](https://www.wordnik.com/) API to get random words and generat
 
 Simple click generate and you won't have to think about variable names ever again.
 
-### Go to the [website](http://soyzamudio.github.io/variable-randomizer) now!
+### Go to the [website](https://soyzamudio.github.io/variable-randomizer) now!
